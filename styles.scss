@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color:peachpuff;
+  height:50px;
+
+  p {
+    margin-right:20px;
+    font-size:20px;
+    
+  }
+}
+
+#showLevel1{
+  margin:5px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px black;
+
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+
+  text-align: center;
+  line-height: 1.1;
+
+  transition: 220ms all ease-in-out;
+
+  &:active {
+    background-color: scale-color(black, $lightness: -20%);
+  }
+
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 4px scale-color(black, $lightness: -40%);
+  }
+
+}
+#showLevel2{
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px black;
+
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+
+ 
+  text-align: center;
+  line-height: 1.1;
+
+  transition: 220ms all ease-in-out;
+
+  &:hover,
+  &:active {
+    background-color: scale-color(black, $lightness: -20%);
+  }
+
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 4px scale-color(black, $lightness: -40%);
+  }
+
+}
+.level1{
+  background-color: #FBA1A1;
+  height:100vh;
+}
+.lvl1Instructions{
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  left: 650px;
+  top: 50px;
+}
+.lvl1GameOver {
+  position:absolute;
+  top:150px;
+  left: 750px;
+  text-align: center;
+  font-size: 50px;
+  color:#FBA1A1;
+}
+#space1 {
+  position: absolute;
+  width: 1049px;
+  height: 233px;
+  left: 450px;
+  top: 367px;
+}
+
+#startLvl1 {
+  z-index: 2;
+  position: absolute;
+  left: 530px;
+  top: 447px;
+  background-color: #f13d3d;
+
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:50% ;
+  
+}
+
+#endLvl1{
+  z-index: 2;
+  position: absolute;
+  left: 1320px;
+  top: 447px;
+
+  background-color: #f13d3d;
+
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:50% ;
+  
+}
+
+.finished1{
+  background-color: yellow;
+  height:100vh;
+}
+.level2{
+  background-color: rgb(125, 196, 125);
+  height:100vh;
+}
+.gameOverLevel2{
+  background-color:black;
+  height:100vh;
+}
+.win2 {
+  background-color:#FFB179;
+  height:100vh;
+}
+
+#space21 {
+  position:absolute;
+  top:50px;
+}
+#space22{
+  position: absolute;
+  width: 410px;
+  height: 472.5px;
+  left: 352.5px;
+  top: 464.5px;
+
+}
+
+#space23{
+  position: absolute;
+  width: 323px;
+  height: 359px;
+  left: 1000px;
+  top: 166px;
+}
+
+#space24{
+  position: absolute;
+  width: 112px;
+  height: 81px;
+  left: 740px;
+  top: 856px;
+}
+#space25{
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  left: 1558px;
+  top: 100px;
+}
+
+#space26{
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  left: 1558px;
+  top: 449px;
+}
+#end2{
+  position: absolute;
+  width: 720px;
+  height: 178px;
+  left: 1200px;
+  top: 800px;
+  background-color:#FFB179;
+  transition: transform 3s ease-in;
+  font-size:100px;
+
+  p {
+    display: none;
+  }
+}
+
+
+#startLvl2 {
+  position: absolute;
+  left:55px;
+  top:50px;
+  background-color: #f13d3d;
+
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:50% ;
+}
+
+#endLvl2 {
+  z-index:5;
+  position: absolute;
+  right:570px;
+  bottom:10px;
+  background-color: #f13d3d;
+
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:50% ;
+}
+.lvl2Instructions {
+  text-align: center;
+  font-size: 50px;
+
+}
+
+.lvl2GameOver {
+  text-align: center;
+  font-size: 45px;
+  color: rgb(125, 196, 125);
+}
+

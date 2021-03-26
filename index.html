@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dont Touch!</title>
+</head>
+<body>
+  
+  <header>
+    <p> <b>First things first,</b> choose your level:   </p>
+    <button id="showLevel1" onclick="showLevel1()">Level 1</button>
+    <button id="showLevel2" onclick="showLevel2()">Level 2</button>
+ </header>
+
+  <section class="level1" id="level1">
+    <p class="lvl1Instructions">DONT TOUCH THE PINK!!</p>
+    <p class="lvl1GameOver">Game Over :(<br>  Refresh to try again!</p>
+    <svg id="space1" width="1049" height="233" viewBox="0 0 1049 233" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M222.715 172C202.653 208.333 163.507 233 118.5 233C53.0543 233 0 180.841 0 116.5C0 52.1588 53.0543 0 118.5 0C163.507 0 202.653 24.6671 222.715 61H826.285C846.347 24.6671 885.493 0 930.5 0C995.946 0 1049 52.1588 1049 116.5C1049 180.841 995.946 233 930.5 233C885.493 233 846.347 208.333 826.285 172H222.715Z" fill="white"/>
+      </svg>
+      <button id ="startLvl1">Start!</button>
+      <button id="endLvl1">End Level 1</button>
+  </section>
+
+  <section class="level2" id="level2">
+    <p class="lvl2Instructions">Make your way to the orange to finish<br> Don't touch the green! </p>
+    <p class="lvl2GameOver">Game Over :(<br>  Refresh to try again!</p>
+  <svg id="space21" width="195" height="268" viewBox="0 0 195 268" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M63 176.5V0H130V176.5H194.5V268H0V176.5H63Z" fill="white"/>
+    </svg>
+  <svg id= "space22" width="411" height="473" viewBox="0 0 411 473" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.5 473V0.5H410.5V65H92V473H0.5Z" fill="white"/>
+  </svg>
+  <svg id="space23" width="323" height="359" viewBox="0 0 323 359" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 359V300.5H138.5V0H323V61H185V359H0Z" fill="white"/>
+    </svg>
+  <svg id="space24" width="112" height="81" viewBox="0 0 112 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="112" height="81" fill="white"/>
+    </svg>
+  <svg id="space25" width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="76" cy="76" r="76" fill="white"/>
+      </svg>
+  <svg id="space26" width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="76" cy="76" r="76" fill="white"/>
+        </svg>
+  <aside id="end2"></aside>
+   <button id ="startLvl2">Start!</button>       
+   <button id ="endLvl2">End!</button>       
+          
+  </section>  
+      
+  <script src="script.js"></script>
+</body>
+</html>
